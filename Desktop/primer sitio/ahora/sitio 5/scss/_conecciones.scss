@@ -1,0 +1,64 @@
+@mixin fondoDePag{
+    text-align: center;
+    margin: auto;
+    width: 90%;
+}
+@each $k, $v in $fuente{
+    .font-#{$k}{
+        font-size: $v;
+        $fontFamily:'Open Sans', sans-serif;
+    }
+}
+@mixin letraDeParrafos{
+    color: rgb(97, 192, 97);
+	font-size: $fuenteDos;
+    font-family: $fontFamily;
+	padding: .25em 1.5em;
+    }
+
+.cuerpo{
+    @include fondoDePag;
+    max-width: $tamañomedia;
+    background-image: url(../media/d.png);
+    & .cuerpoTitulo{
+        @include letraDeParrafos;
+        font-size:  $fuenteDos*2;
+        color: $colorTitulo;
+    }
+    & .cuerpoTotal{
+        background-image: linear-gradient(75deg, #ffffe0 0, #d8c455 50%, #8b7500 100%);
+        min-height: 400px;
+        height: 50vh;
+        position: relative;
+        height: auto;
+        width: 100%;
+        background-image: url(../media/d.png);
+        & .cuerpoNav {
+                    .cuerpoLinkInicio{
+                        @include letraDeParrafos;
+                    }
+                    & ul li{
+                        .cuerpoLink{
+                            color: rgb(180, 28, 194); 
+                            @extend .cuerpoLinkInicio;
+                            @if color == rgb(97, 192, 97){
+                                font-size: $fuenteDos;
+                            }@else{
+                                font-size: ($fuenteDos)- 0.2rem;
+                            }
+                                
+                        }
+                    }
+                }
+            .cuerpoInfo .ariculoUno img{
+                width: 0.150*($tamañomedia);          
+        }
+            .cuerpoInfo .ariculoUno .videoDePortada{
+                width: 0.150*($tamañomedia);
+            }
+        }
+    }
+
+.imagenPsi{
+    width: 0.150*($tamañomedia);
+}
