@@ -1,29 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap");
-/* line 7, ../../../Desktop/primer sitio/ahora/sitio sass 2/scss/_conecciones.scss */
+/* line 7, ../../../Desktop/primer sitio/sitio/scss/_conecciones.scss */
 .font-h5 {
   font-size: 0.8em;
 }
 
-/* line 7, ../../../Desktop/primer sitio/ahora/sitio sass 2/scss/_conecciones.scss */
+/* line 7, ../../../Desktop/primer sitio/sitio/scss/_conecciones.scss */
 .font-li {
   font-size: 1.2em;
 }
 
-/* line 7, ../../../Desktop/primer sitio/ahora/sitio sass 2/scss/_conecciones.scss */
+/* line 7, ../../../Desktop/primer sitio/sitio/scss/_conecciones.scss */
 .font-button {
   font-size: 1.6em;
 }
 
-/* line 19, ../../../Desktop/primer sitio/ahora/sitio sass 2/scss/_conecciones.scss */
+/* line 19, ../../../Desktop/primer sitio/sitio/scss/_conecciones.scss */
 .cuerpo {
+  background-image: url(../media/sunflowers.png);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
   text-align: center;
   margin: auto;
   width: 90%;
   max-width: 1000px;
-  background-image: url(../media/d.png);
 }
 
-/* line 23, ../../../Desktop/primer sitio/ahora/sitio sass 2/scss/_conecciones.scss */
+/* line 27, ../../../Desktop/primer sitio/sitio/scss/_conecciones.scss */
 .cuerpo .cuerpoTitulo {
   color: #61c061;
   font-size: 1.2rem;
@@ -33,9 +36,8 @@
   color: #362e52;
 }
 
-/* line 28, ../../../Desktop/primer sitio/ahora/sitio sass 2/scss/_conecciones.scss */
+/* line 32, ../../../Desktop/primer sitio/sitio/scss/_conecciones.scss */
 .cuerpo .cuerpoTotal {
-  background-image: linear-gradient(75deg, #ffffe0 0, #d8c455 50%, #8b7500 100%);
   min-height: 400px;
   height: 50vh;
   position: relative;
@@ -44,7 +46,20 @@
   background-image: url(../media/d.png);
 }
 
-/* line 37, ../../../Desktop/primer sitio/ahora/sitio sass 2/scss/_conecciones.scss */
+/* line 39, ../../../Desktop/primer sitio/sitio/scss/_conecciones.scss */
+.cuerpo .cuerpoTotal .cuerpoInter {
+  background-image: url(../media/Lavender.png);
+  background-size: cover;
+}
+
+/* line 43, ../../../Desktop/primer sitio/sitio/scss/_conecciones.scss */
+.cuerpo .cuerpoTotal ul {
+  list-style-type: none;
+  margin: 0%;
+  padding: 0%;
+}
+
+/* line 49, ../../../Desktop/primer sitio/sitio/scss/_conecciones.scss */
 .cuerpo .cuerpoTotal .cuerpoNav .cuerpoLinkInicio, .cuerpo .cuerpoTotal .cuerpoNav ul li .cuerpoLink {
   color: #61c061;
   font-size: 1.2rem;
@@ -52,25 +67,43 @@
   padding: .25em 1.5em;
 }
 
-/* line 41, ../../../Desktop/primer sitio/ahora/sitio sass 2/scss/_conecciones.scss */
+/* line 53, ../../../Desktop/primer sitio/sitio/scss/_conecciones.scss */
 .cuerpo .cuerpoTotal .cuerpoNav ul li .cuerpoLink {
   color: #b41cc2;
   font-size: 1rem;
 }
 
-/* line 53, ../../../Desktop/primer sitio/ahora/sitio sass 2/scss/_conecciones.scss */
+/* line 65, ../../../Desktop/primer sitio/sitio/scss/_conecciones.scss */
 .cuerpo .cuerpoTotal .cuerpoInfo .ariculoUno img {
   width: 150px;
 }
 
-/* line 56, ../../../Desktop/primer sitio/ahora/sitio sass 2/scss/_conecciones.scss */
+/* line 68, ../../../Desktop/primer sitio/sitio/scss/_conecciones.scss */
 .cuerpo .cuerpoTotal .cuerpoInfo .ariculoUno .videoDePortada {
   width: 150px;
 }
 
-/* line 62, ../../../Desktop/primer sitio/ahora/sitio sass 2/scss/_conecciones.scss */
+/* line 74, ../../../Desktop/primer sitio/sitio/scss/_conecciones.scss */
 .imagenPsi {
   width: 150px;
+}
+
+/* line 77, ../../../Desktop/primer sitio/sitio/scss/_conecciones.scss */
+.piePag {
+  padding: auto;
+  width: 100%;
+  margin: 1em;
+  text-align: left;
+  height: 10%;
+  background-color: burlywood;
+  border-radius: .5em;
+  cursor: pointer;
+  transition: background-color 1s;
+}
+
+/* line 88, ../../../Desktop/primer sitio/sitio/scss/_conecciones.scss */
+.piePag:hover {
+  background-color: coral;
 }
 
 /*# sourceMappingURL=estilos.css.map */

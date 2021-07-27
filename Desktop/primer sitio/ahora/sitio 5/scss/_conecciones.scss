@@ -17,22 +17,34 @@
     }
 
 .cuerpo{
+    background-image: url(../media/sunflowers.png);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
     @include fondoDePag;
     max-width: $tamañomedia;
-    background-image: url(../media/d.png);
+
     & .cuerpoTitulo{
         @include letraDeParrafos;
         font-size:  $fuenteDos*2;
         color: $colorTitulo;
     }
     & .cuerpoTotal{
-        background-image: linear-gradient(75deg, #ffffe0 0, #d8c455 50%, #8b7500 100%);
         min-height: 400px;
         height: 50vh;
         position: relative;
         height: auto;
         width: 100%;
         background-image: url(../media/d.png);
+        .cuerpoInter{
+            background-image: url(../media/Lavender.png);
+            background-size: cover;
+          }
+        ul{
+            list-style-type: none;
+            margin: 0%;
+            padding: 0%;
+          }
         & .cuerpoNav {
                     .cuerpoLinkInicio{
                         @include letraDeParrafos;
@@ -62,3 +74,18 @@
 .imagenPsi{
     width: 0.150*($tamañomedia);
 }
+.piePag{
+padding: auto;
+    width: 100% ;
+    margin: 1em;
+    text-align: left;
+    height: 10%;
+    background-color: burlywood;
+    border-radius: .5em;
+    cursor: pointer;
+    transition: background-color 1s;
+  }
+  .piePag:hover{
+      background-color: coral;
+    }
+
